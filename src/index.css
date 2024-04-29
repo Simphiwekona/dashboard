@@ -1,4 +1,6 @@
 body {
+  background-color: #282c34;
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.sidebar {
+  margin:0;
+  padding:0;
+  width:200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  font-weight: bold;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-image: linear-gradient(to right, #90EE90, #007bff);
+  color: white;
+}
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+.login_button{
+  display: block;
+  text-align: center;
+  margin-top: 150%;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }

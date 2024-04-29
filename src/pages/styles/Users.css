@@ -1,0 +1,78 @@
+/* Users.css */
+.users-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Added box-shadow */
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spaces between table cells */
+    border-radius: 10px; /* Border radius for table */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add border bottom for rows */
+}
+
+th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background on hover */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.navbar button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .users-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+}
